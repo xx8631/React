@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ThemeProvider, UserProvider } from "../../../Context";
+import { ThemeProvider, UserProvider } from "./Context";
 import ConSumerPage from './ConSumerPage';
 /*context-provider 的使用方法*/
 export default class ContextPage extends Component {

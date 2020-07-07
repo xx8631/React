@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {ThemeContext} from "./../../../Context";
+import {ThemeContext} from "./Context";
 
 export default class ContextTypePage extends Component {
   //contextType只能订阅单个  后面的定义会覆盖前面的定义

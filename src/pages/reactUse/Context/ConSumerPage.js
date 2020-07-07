@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ThemeConsumer, UserConsumer } from '../../../Context'
+import { ThemeConsumer, UserConsumer } from './Context'
 /*context-consumer 的使用方法*/
 export default class ConSumerPage extends Component {
   render() {

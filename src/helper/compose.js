@@ -3,28 +3,26 @@
 function compose(...funcs) {
   //funcs 是一个数组;
   if (funcs.length === 0) {
-
-  }
-  if (funcs.length === 1) {
-
+   return arg=>arg;
   }
   //数组的reduce方法:参数1 为callback；a为pre；b为cur；
   return funcs.reduce((a, b) => (...args) => a(b(...args)));
 }
 //示例：
-function f1(arg) {
-  console.log("f1", arg);
-  return arg;
-}
-function f2(arg) {
-  console.log("f2", arg);
-  return arg;
-}
-function f3(arg) {
-  console.log("f3", arg)
-  return arg;
-}
+// function f1(arg) {
+//   console.log("f1", arg);
+//   return arg;
+// }
+// function f2(arg) {
+//   console.log("f2", arg);
+//   return arg;
+// }
+// function f3(arg) {
+//   console.log("f3", arg)
+//   return arg;
+// }
 
-let res = compose(f1, f2, f3)("omg")//相当于 f1(f2(f3("omg")));
+// let res = compose(f1, f2, f3)("omg")//相当于 f1(f2(f3("omg")));
 
-console.log("res", res);
+// console.log("res", res);
+export {compose};
