@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+// import ContextPage from './pages/reactUse/Context/ContextPage'
+// import AntdFom4PageFunc from './pages/reactUse/AntdForm/AntdFom4PageFunc';
+// import AntdForm4PageClass from './pages/reactUse/AntdForm/AntdForm4PageClass';
+// import MyRCFieldForm from './pages/reactUse/AntdForm/MyRCFieldForm';
+// import HocPageDecorator from './pages/reactUse/DialogPage';
+ import HocPageDecorator from './pages/reactUse/Hoc/HocPageDecorator';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <HocPageDecorator/>
     </div>
   );
 }
