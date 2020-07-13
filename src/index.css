@@ -25,3 +25,10 @@ code {
   top: calc(50% - 50px);
   position: absolute;
  }
+ .nav{
+  display: flex;
+  justify-content: space-around;
+  height: 45px;
+  align-items: center;
+  background: aliceblue;
+ }
